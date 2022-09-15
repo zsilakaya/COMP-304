@@ -1,0 +1,7 @@
+file1.txt and file2.txt have the same contents.
+After editing file2.txt file1.txt is also changed. Their contents are the same.
+After removing file1.txt, file2.txt still exists.
+Unlinkat is the system call which used for removing file2.txt
+Inode numbers of file3.txt and file4.txt is unique.
+After editing file4.txt file3.txt also changes.
+After removing file3.txt and editing file4.txt I could not edit file4.txt.

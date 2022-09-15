@@ -1,0 +1,7 @@
+In paging there is no external fragmentation because we divide each process and virtual memory to equal-sized pages so we can never face with external fragmentation.Also, paging suports code sharing between process.
+
+
+In Segmentation processes are divide into segment tables which have their own base and limit registers so its support code sharing between processes if they are in the same segments.Segmentation is suffers from external fragmentation because segment sizes are variable.There might be unused area in the segment which causes external fragmentation.
+
+
+Contiguous Allocation is suffers from external fragmentation because we have holes of various sizes available memory and when a process arrives it should allocate memory from a hole which is large enough.But the available hole might be larger than the process. This would cause external fragmentation.It does not support code sharing since there is Base and Limit registers for every process. 

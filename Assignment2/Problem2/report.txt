@@ -1,0 +1,13 @@
+//When I run the racy code:
+real	0m0,035s
+user	0m0,008s
+sys	0m0,056s
+//when I run the fixed code:
+real	0m3,559s
+user	0m0,060s
+sys	0m0,243s
+
+//Since we implement lock and unlock  in the fixed code, more than one thread cannot enter the critical section at the same time.For this reason fixed code takes more time than racy code.
+
+//For fixing the code I call  lock() function before checking the stock variable to ensure that more than one thread cannot enter the critical section  and unlock it before returning frofrom sell function.  
+
